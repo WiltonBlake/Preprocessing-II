@@ -1,1 +1,44 @@
 // Navigation Styles here
+header {
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 30px;
+    display:flex;
+
+}
+
+nav{
+    text-decoration: none;
+	align-items: right;
+	justify-content: space-between;
+    align-self: center;
+    margin-left: 350px;
+}
+
+nav a {
+	font-size: 15px;
+    margin-left: 20px;
+    text-decoration: none;
+	color: @shark;
+}
+
+nav a:hover {
+	color: @eastern-blue;
+}
+
+@media @phone {
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    nav{
+        justify-content: space-between;
+        align-self: center;
+        margin-left: 0px; 
+}
+    h1 {
+        align-self: center;
+
+    }
+}

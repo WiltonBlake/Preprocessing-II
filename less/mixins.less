@@ -1,1 +1,29 @@
 // Mixins in here
+
+.fonts(@size, @fam){
+    font-size:@size;
+    font-family:@fam;
+}
+
+.flex(@direction, @align){
+    display:flex;
+    flex-direction:@direction;
+    align-content:@align;
+}
+
+.buttons(@fontcolor, @background-color){
+    background-color: green;
+    border-radius: 10px;
+    height: 45px;
+    font-size: 2rem;
+    color: white;
+    border: 1px solid green;
+    cursor: pointer;
+    text-align: center;
+    line-height: 4rem;
+    
+    &:hover {
+      color:green;
+      background-color: white;
+    }   
+}
